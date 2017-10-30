@@ -1,0 +1,46 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+@import '../variables.scss';
+
+.mangaGrid {
+  margin-right: -$grid-item-padding;
+  margin-left: -$grid-item-padding;
+}
+
+.mangaGridItem {
+  width: calc(100% / 6);
+
+  @media (max-width: $screen-max-tablet) {
+    width: calc(100% / 5);
+  }
+
+  @media (max-width: $screen-max-tablet) {
+    width: calc(100% / 5);
+  }
+
+  @media (max-width: $screen-max-phone) {
+    width: calc(100% / 4);
+  }
+
+  @media (max-width: $screen-max-phone-sm) {
+    width: calc(100% / 3);
+  }
+}
+
+.smallGrid {
+  .mangaGridItem {
+    width: calc(100% / 5);
+
+    @media (max-width: $screen-max-desktop) {
+      width: calc(100% / 4);
+    }
+
+    @media (max-width: $screen-max-phone) {
+      width: calc(100% / 3);
+    }
+  }
+}
+
+.authors {
+  @include truncate();
+  @include font-style($smallbody: true);
+}

@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+
+.root {
+  @include font-style($smallbody: true);
+  @include flex-center($display: inline-flex);
+}
+
+.icon {
+  margin-right: 5px;
+  font-size: 20px;
+
+  @media (max-width: $screen-max-phone) {
+    font-size: 16px;
+  }
+}
+
+.text {
+  display: inline-block;
+  max-width: 160px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 1px;
+
+  @media (max-width: $screen-max-phone) {
+    max-width: 140px;
+  }
+}

@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+.root {
+  position: fixed;
+  right: 24px;
+  bottom: 24px;
+  z-index: $z-index-9;
+
+  @media (max-width: $screen-max-phone) {
+    right: 8px;
+    bottom: 8px;
+  }
+}

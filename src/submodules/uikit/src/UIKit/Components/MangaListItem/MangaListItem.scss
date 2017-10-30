@@ -1,0 +1,58 @@
+@import "../../variables.scss";
+
+.root {
+  @include flex-center($display: flex);
+
+  // root
+
+  width: 100%;
+  justify-content: flex-start;
+  padding-left: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-radius: 2px;
+  transition: background-color 0.15s ease;
+
+  &:hover {
+    background-color: $cl-black08;
+  }
+
+  .mangaTitle {
+    @include font-style($headline: true);
+    @include truncate-multiline($lh-headline, 2);
+  }
+
+  .thumbnailWrap {
+    margin-right: 16px;
+    width: 20%;
+    height: 100%;
+  }
+
+  .thumbnail {
+    width: 100%;
+    padding-bottom: 150%;
+    height: 0;
+  }
+
+  // other
+
+  .info {
+    display: inline-flex;
+    flex-direction: column;
+    width: calc(100% - 20% - 16px - 20px);
+  }
+
+  .numbering {
+    margin-right: 20px;
+  }
+
+  .author {
+    @include font-style($smallbody: true);
+  }
+
+  .subtext {
+    @include font-style($smallbody: true);
+    @include truncate();
+  }
+}
+

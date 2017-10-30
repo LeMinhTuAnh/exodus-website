@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.root {
+  @include flex-center($display: inline-flex);
+
+  position: relative;
+  height: 36px;
+  padding: 8px 16px 8px 8px;
+  background-color: $cl-white;
+  border-radius: 18px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &:hover {
+    background-color: $cl-black08;
+  }
+}
+
+.text {
+  @include font-style($body: true);
+
+  color: $cl-black;
+  margin-left: 8px;
+}
+
+.circle {
+  font-size: 20px;
+  color: $cl-neutral-4;
+}

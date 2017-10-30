@@ -1,0 +1,6 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+@import '../variables.scss';
+
+.root {
+  @include font-style($smallbody: true);
+}

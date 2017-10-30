@@ -1,0 +1,128 @@
+@import (reference) '../../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../../resources/less/variables.less';
+
+.reportButton {
+  position: absolute;
+  top: 12px;
+  right: 21px;
+  z-index: 2;
+  border: 0;
+  box-shadow: none;
+  background-color: transparent;
+}
+
+.dotIcon {
+  font-size: 20px;
+  top: 3px;
+  left: -1px;
+  color: @navbar-default-link-color;
+}
+
+.modal {
+  .modalBody {
+    padding: 20px 25px 10px;
+  }
+}
+
+.buttonsWrapper {
+  float: right;
+}
+
+.buttons {
+  &[disabled] {
+    opacity: 0.5;
+    color: @brand-info;
+  }
+}
+
+.issueConfirm {
+  .description {
+    margin: 0 24px 24px;
+  }
+
+  .issueConfirmInput {
+    width: 100%;
+    max-width: 100%;
+    margin-top: -24px;
+    // color: @gray-dark;
+    // font-weight: @fw-medium;
+    // border: 0;
+    // border-bottom: solid 0.5px #979797;
+    // padding-bottom: 5px;
+    // margin-bottom: 20px;
+
+    // &::placeholder {
+    //   color: @black-muted;
+    // }
+  }
+
+  .uploadFileWrapper {
+    margin-bottom: 30px;
+    height: 36px;
+  }
+
+  .filename {
+    display: inline-block;
+    color: @gray-dark;
+    padding: 6px 20px;
+    font-weight: @fw-medium;
+    font-size: 16px;
+    opacity: 0.5;
+    max-width: 300px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    float: left;
+  }
+
+  .removeFileButton {
+    display: inline-block;
+    text-transform: capitalize;
+    float: right;
+  }
+
+  .attachFileButton {
+    display: inline-block;
+    padding: 0;
+    float: left;
+
+    input {
+      display: none;
+    }
+
+    label {
+      padding: 0 16px;
+      font-size: 16px;
+    }
+  }
+
+  .checkBoxWrapper {
+    // input {
+    //   margin-right: 20px;
+    //   margin-bottom: 15px;
+    // }
+
+    // label {
+    //   font-size: 16px;
+    //   font-weight: @fw-medium;
+    //   color: @gray-dark;
+    //   opacity: 0.87;
+    // }
+
+    .emailInputWrapper {
+      margin-top: 20px;
+    }
+  }
+
+  .emailDescription {
+    font-size: 14px;
+    opacity: 0.6;
+  }
+
+  .errorText {
+    font-size: 14px;
+    font-weight: @fw-medium;
+    color: red;
+    margin-top: -10px;
+  }
+}

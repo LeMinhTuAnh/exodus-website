@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+$tip-size: 8px;
+
+.popover-container {
+  position: relative;
+
+  .mdl-menu__container {
+    margin-top: 12px;
+    margin-bottom: 12px;
+  }
+}
+
+.popover-container--bottom-right {
+  .mdl-menu__container::before {
+    content: "";
+    z-index: $z-index-2;
+    position: absolute;
+    top: -15px;
+    right: 10px;
+    margin-left: -$tip-size;
+    border-width: $tip-size;
+    border-style: solid;
+    border-color: transparent transparent white;
+  }
+
+  .mdl-menu__container::after {
+    content: "";
+    position: absolute;
+    z-index: $z-index-1;
+    top: -16px;
+    right: 10px;
+    margin-left: -$tip-size;
+    border-width: $tip-size;
+    border-style: solid;
+    border-color: transparent transparent rgba(0, 0, 0, 0.1);
+  }
+}

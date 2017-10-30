@@ -1,0 +1,29 @@
+@import "../../../UIKit/variables.scss";
+
+h1 {
+  @include font-style($h1: true);
+}
+
+h2 {
+  @include font-style($h2: true);
+}
+
+h3 {
+  @include font-style($h3: true);
+}
+
+.headline {
+  @include font-style($headline: true);
+}
+
+.bodyText {
+  @include font-style($body: true);
+}
+
+.smallBodyText {
+  @include font-style($smallbody: true);
+}
+
+.subText {
+  @include font-style($subtext: true);
+}

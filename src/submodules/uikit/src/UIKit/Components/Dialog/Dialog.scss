@@ -1,0 +1,57 @@
+@import "../../variables.scss";
+
+.overlay {
+  background: $cl-black54;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: $z-index-6;
+  opacity: 1;
+  visibility: visible;
+}
+
+.root {
+  min-width: 500px;
+  max-width: calc(100vw - 30px);
+  max-height: calc(100vh - 30px);
+  box-shadow: $elevation-24;
+  background-color: $cl-white;
+  position: absolute;
+  z-index: $z-index-2;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: root 0.4s cubic-bezier(0.465, 0.183, 0.153, 0.946) 0ms;
+
+  @media (max-width: $screen-max-phone) {
+    min-width: 280px;
+  }
+}
+
+@keyframes overlay {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes root {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+    transform: translate(-50%, -60%);
+  }
+
+  100% {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, -50%);
+  }
+}

@@ -1,0 +1,6 @@
+{
+    "uploadUrl": "http://1.b2.mrcdn.info/upload.php",
+    "uploadMriUrl": "http://1.b2.mrcdn.info/upload_mri.php",
+    "transloadMriUrl": "http://1.b2.mrcdn.info/transload.php",
+    "transloadJpegUrl": "http://1.b2.mrcdn.info/transloadImage.php"
+}

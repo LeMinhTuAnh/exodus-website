@@ -1,0 +1,48 @@
+@import "../../variables.scss";
+
+.root {
+  @include flex-center($display: flex);
+
+  flex-direction: column;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+.title {
+  @include font-style($h2: true);
+
+  text-transform: uppercase;
+  color: $cl-black;
+  margin-top: 40px;
+  text-align: center;
+
+  @media (max-width: $screen-max-phone) {
+    margin-top: 24px;
+  }
+}
+
+.subtitle {
+  @include font-style($body: true);
+
+  text-align: center;
+}
+
+.action {
+  margin-top: 24px;
+
+  @media (max-width: $screen-max-phone) {
+    margin-top: 16px;
+  }
+}
+
+.dark {
+  .title {
+    color: $cl-white;
+  }
+
+  .subtitle {
+    color: $cl-white70;
+  }
+}

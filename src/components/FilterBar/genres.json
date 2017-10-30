@@ -1,0 +1,112 @@
+[
+  {
+    "name": "4 Koma",
+    "eid": 1,
+    "type": "genre"
+  },
+  {
+    "name": "Action",
+    "eid": 2,
+    "type": "genre"
+  },
+  {
+    "name": "Adult",
+    "eid": 3,
+    "type": "genre"
+  },
+  {
+    "name": "Adventure",
+    "eid": 4,
+    "type": "genre"
+  },
+  {
+    "name": "Comedy",
+    "eid": 5,
+    "type": "genre"
+  },
+  {
+    "name": "Cooking",
+    "eid": 6,
+    "type": "genre"
+  },
+  {
+    "name": "Demons",
+    "eid": 7,
+    "type": "genre"
+  },
+  {
+    "name": "Doujinshi",
+    "eid": 8,
+    "type": "genre"
+  },
+  {
+    "name": "Drama",
+    "eid": 9,
+    "type": "genre"
+  },
+  {
+    "name": "Ecchi",
+    "eid": 10,
+    "type": "genre"
+  },
+  {
+    "name": "Fantasy",
+    "eid": 11,
+    "type": "genre"
+  },
+  {
+    "name": "Gender bender",
+    "eid": 12,
+    "type": "genre"
+  },
+  {
+    "name": "Harem",
+    "eid": 13,
+    "type": "genre"
+  },
+  {
+    "name": "Historical",
+    "eid": 14,
+    "type": "genre"
+  },
+  {
+    "name": "Horror",
+    "eid": 15,
+    "type": "genre"
+  },
+  {
+    "name": "Josei",
+    "eid": 16,
+    "type": "genre"
+  },
+  {
+    "name": "Magic",
+    "eid": 17,
+    "type": "genre"
+  },
+  {
+    "name": "Martial Art",
+    "eid": 18,
+    "type": "genre"
+  },
+  {
+    "name": "Mature",
+    "eid": 19,
+    "type": "genre"
+  },
+  {
+    "name": "Mecha",
+    "eid": 20,
+    "type": "genre"
+  },
+  {
+    "name": "Medical",
+    "eid": 21,
+    "type": "genre"
+  },
+  {
+    "name": "Music",
+    "eid": 22,
+    "type": "genre"
+  }
+]

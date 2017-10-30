@@ -1,0 +1,32 @@
+@import (reference) '../../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../../resources/less/variables.less';
+
+.arrowButton {
+  background: transparent !important;
+  border: 0;
+  box-shadow: none;
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  bottom: auto;
+  left: 0.5em;
+  right: auto;
+  transform: translateY(-50%);
+  z-index: 9;
+  color: @navbar-default-link-color;
+
+  @media (max-width: @screen-phone) {
+    height: 30px;
+    width: 30px;
+    min-width: 30px;
+
+    & > i {
+      line-height: 1.8;
+    }
+  }
+
+  &.next {
+    left: auto;
+    right: 0.5em;
+  }
+}

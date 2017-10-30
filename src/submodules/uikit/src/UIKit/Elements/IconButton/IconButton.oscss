@@ -1,0 +1,3 @@
+@import "../../variables.scss";
+
+.mdl-button--icon {color: $cl-black54;}

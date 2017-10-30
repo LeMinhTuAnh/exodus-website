@@ -1,0 +1,62 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+$avatar-width-desktop: 180px;
+$avatar-width-phone: 100px;
+
+.avatarWrap {
+  display: inline-block;
+  width: $avatar-width-desktop + 20px;
+  vertical-align: top;
+
+  @media (max-width: $screen-max-phone) {
+    display: flex;
+    align-items: center;
+    width: 100%;
+  }
+}
+
+.avatar {
+  width: $avatar-width-desktop;
+  height: $avatar-width-desktop;
+  margin-right: 20px;
+
+  @media (max-width: $screen-max-phone) {
+    width: $avatar-width-phone;
+    height: $avatar-width-phone;
+  }
+}
+
+.info {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 180px - 20px);
+
+  @media (max-width: $screen-max-phone) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.shareButtons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.description {
+  overflow-x: auto;
+}
+
+.hiddenDesktop {
+  display: none !important;
+
+  @media (max-width: $screen-max-phone) {
+    display: block !important;
+  }
+}
+
+.hiddenPhone {
+  display: block !important;
+
+  @media (max-width: $screen-max-phone) {
+    display: none !important;
+  }
+}

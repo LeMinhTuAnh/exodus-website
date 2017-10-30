@@ -1,0 +1,20 @@
+@import "../../variables.scss";
+
+.mdl-textfield__label {
+  &::after {
+    background-color: $cl-primary;
+    bottom: 11px;
+  }
+
+  .mdl-textfield--floating-label.is-focused &,
+  .mdl-textfield--floating-label.is-dirty &,
+  .mdl-textfield--floating-label.has-placeholder & {
+    color: $cl-black38;
+  }
+}
+
+.mdl-textfield__error {
+  @include font-style($subtext: true);
+
+  color: $cl-danger;
+}

@@ -1,0 +1,27 @@
+@import "../../variables.scss";
+$border-color: rgba(189, 189, 189, 0.38);
+
+.root {
+  @include flex-center();
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+  background-color: $cl-neutral-1;
+  width: 100vw;
+  height: 76px;
+}
+
+.text {
+  @include font-style($headline: true);
+
+  display: inline-block;
+  flex-grow: 2;
+}
+
+.viewButton {
+  width: 115px;
+  margin-right: 16px;
+}

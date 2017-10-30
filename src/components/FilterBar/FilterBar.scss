@@ -1,0 +1,96 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+
+.root {
+  background-color: $cl-neutral-1;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+  margin-bottom: $gutter;
+  padding: ($gutter / 2) $gutter;
+}
+
+.sectionTitle {
+  @include font-style($headline: true);
+
+  color: $cl-black54;
+  margin-bottom: 15px;
+  margin-top: 10px;
+}
+
+.radioGroup {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.column {
+  width: calc(100% / 6);
+
+  @media (max-width: $screen-max-tablet) {
+    width: calc(100% / 5);
+  }
+
+  @media (max-width: $screen-max-phone) {
+    width: calc(100% / 3);
+  }
+
+  :global {
+    .mdl-radio__label {
+      font-weight: $fw-medium;
+    }
+  }
+}
+
+.genres {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.buttons {
+  @include flex-center();
+
+  margin-top: 40px;
+  margin-bottom: 10px;
+}
+
+.button {
+  width: 150px;
+  margin-left: $gutter;
+  margin-right: $gutter;
+}
+
+.btnFilter {
+  float: left;
+  margin-right: 8px;
+}
+
+.comboBoxes {
+  float: right;
+
+  select {
+    width: 110px;
+  }
+}
+
+.expanded {
+  .btnFilter {
+    float: none !important;
+  }
+
+  .activeFilters,
+  .comboBoxes {
+    display: none;
+  }
+}
+
+.comboBoxLabel {
+  margin-right: 10px;
+}
+
+.clearfix {
+  &::after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+}
+

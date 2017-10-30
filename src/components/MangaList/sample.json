@@ -1,0 +1,46 @@
+[
+  {
+    "eid": 1,
+    "type": "serie",
+    "createdAt": 1472542952,
+    "updatedAt": 1473048202,
+    "thumbnail": "http://media.phimbathu.com/uploads/2015/06/600/naruto-shippuuden-201506776.jpg",
+    "name": "Naruto",
+    "status": false,
+    "authors": [10],
+    "totalChapter": "35"
+  },
+  {
+    "eid": 2,
+    "type": "serie",
+    "createdAt": 1472542952,
+    "updatedAt": 1473048202,
+    "thumbnail": "https://myanimelist.cdn-dena.com/images/manga/2/144991.jpg",
+    "name": "Nisekoi Doumei",
+    "status": false,
+    "authors": [10],
+    "totalChapter": "35"
+  },
+  {
+    "eid": 3,
+    "type": "serie",
+    "createdAt": 1472542952,
+    "updatedAt": 1473048202,
+    "thumbnail": "http://tvfiles.alphacoders.com/558/poster-thumb-55897.jpg",
+    "name": "Yaoguai",
+    "status": true,
+    "authors": [10],
+    "totalChapter": "35"
+  },
+  {
+    "eid": 4,
+    "type": "serie",
+    "createdAt": 1472542952,
+    "updatedAt": 1473048202,
+    "thumbnail": "",
+    "name": "Dokgo Rewind",
+    "status": true,
+    "authors": [10],
+    "totalChapter": "35"
+  }
+]

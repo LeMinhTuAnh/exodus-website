@@ -1,0 +1,132 @@
+@import (reference) '../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../resources/less/variables.less';
+
+@img-height-big: 790px;
+@img-height-lg: 600px;
+@img-height-sm: 363px;
+
+.artworkBrowser {
+  .carousel {
+    margin: 0 -(@grid-gutter-width / 2);
+    height: @img-height-big;
+
+    figure {
+      background: #fafafa;
+      position: relative;
+      height: @img-height-big;
+
+      img {
+        width: 525px;
+        height: @img-height-big;
+        border: 1px solid @border-color-block;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    @media (max-width: @screen-lg) {
+      &,
+      & figure,
+      & figure img {
+        height: @img-height-lg;
+      }
+
+      & figure img {
+        width: 400px;
+      }
+    }
+
+    @media (max-width: (@screen-sm - 1)) {
+      &,
+      & figure,
+      & figure img {
+        height: @img-height-sm;
+      }
+
+      & figure img {
+        width: 242px;
+      }
+    }
+  }
+
+  .thumbnails {
+    margin-right: -(@grid-gutter-width / 2);
+    margin-top: (@grid-gutter-width / 2);
+    margin-bottom: -(@grid-gutter-width / 2);
+
+    &::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+
+    @media (max-width: @screen-xs-max) {
+      margin-right: -(@grid-gutter-width / 4);
+    }
+
+    .item {
+      float: left;
+      margin-right: (@grid-gutter-width / 2);
+      margin-bottom: (@grid-gutter-width / 2);
+      width: 78px;
+
+      @media (max-width: @screen-xs-max) {
+        margin: 0;
+        padding-right: (@grid-gutter-width / 4);
+        padding-bottom: (@grid-gutter-width / 2);
+        width: 12.5%;
+      }
+
+      @media (max-width: @screen-phone) {
+        width: 25%;
+      }
+
+      a {
+        background-color: @bg-no-image;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        display: block;
+        height: 0;
+        width: 100%;
+        padding-bottom: 150%;
+        overflow: hidden;
+        position: relative;
+
+        &::before {
+          content: ' ';
+          display: block;
+          border: 1px solid rgba(0, 0, 0, 0.3);
+          position: absolute;
+          bottom: 0;
+          top: 0;
+          left: 0;
+          right: 0;
+          z-index: 2;
+        }
+      }
+
+      &.active {
+        a {
+          &::before {
+            border: 3px solid @brand-info;
+          }
+
+          &::after {
+            content: ' ';
+            display: block;
+            background: rgba(0, 0, 0, 0.3);
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+          }
+        }
+      }
+    }
+  }
+}

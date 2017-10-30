@@ -1,0 +1,32 @@
+@import "../../variables.scss";
+
+.root {
+  display: inline-flex;
+  align-items: center;
+  padding-left: 24px;
+}
+
+.input {
+  display: none;
+}
+
+.box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 2;
+  font-size: 21px;
+  color: $cl-black54;
+
+  &.blue {
+    color: $cl-primary;
+  }
+}
+
+.label {
+  @include font-style($body: true);
+}

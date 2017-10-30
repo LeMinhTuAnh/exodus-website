@@ -1,0 +1,58 @@
+// Overide material-design-lite variable here
+
+// 1. BUTTON
+// 2. TEXT FIELD
+// 3. TOOLTIP
+// 4. SPINNER
+// 5. SNACKBAR
+// 6. CHECKBOX
+
+// ===============
+
+@import '../variables.scss'; // Project variable
+@import '~bootstrap/scss/bootstrap-grid.scss';
+@import '~bootstrap/scss/utilities/_spacing.scss';
+
+// Override Material-design-lite variable here
+
+// primary color in mdl
+$color-primary: 41, 182, 246; // = $cl-primary in rgb
+$color-accent: 41, 182, 246;
+
+// 1. BUTTONs
+// a. FabButton
+$button-secondary-color-disabled: $cl-black12;
+
+// 2. TEXT FIELD
+$input-text-error-color: $cl-danger; // error color, error line color
+
+// 3. TOOLTIP
+$tooltip-background-color: $cl-black87;
+
+// 4. SPINNER
+$spinner-size: 40px;
+
+// 5. SNACKBAR
+$grid-tablet-breakpoint: $screen-min-tablet;
+
+// 6. CHECKBOX
+$image_path: '~material-design-lite/dist/images/';
+
+// 7. SWITCH
+$switch-off-thumb-color: rgb(250, 250, 250); // $cl-neutral-1
+$switch-off-track-color: rgba(189, 189, 189, 0.54); // $cl-neutral-4 54%
+$switch-disabled-thumb-color: rgb(250, 250, 250);
+$switch-disabled-track-color: rgba(189, 189, 189, 0.54);
+
+// Material-design-lite style ALL here.
+@import '~material-design-lite/src/_variables.scss';
+@import '~material-design-lite/src/_mixins.scss';
+@import '~material-design-lite/src/ripple/_ripple.scss';
+@import '~material-design-lite/src/button/_button.scss';
+@import '~material-design-lite/src/textfield/_textfield.scss';
+@import '~material-design-lite/src/tooltip/_tooltip.scss';
+@import '~material-design-lite/src/snackbar/_snackbar.scss';
+@import '~material-design-lite/src/checkbox/_checkbox.scss';
+@import '~material-design-lite/src/radio/_radio.scss';
+@import '~material-design-lite/src/menu/_menu.scss';
+@import '~material-design-lite/src/switch/_switch.scss';

@@ -1,0 +1,46 @@
+@import "../../variables.scss";
+
+.root {
+  @include flex-center($display: flex);
+
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  width: 100%;
+
+  &:hover {
+    background-color: $cl-black12;
+    text-decoration: none;
+  }
+}
+
+.thumbnailWrap {
+  width: 40%;
+  height: 100%;
+}
+
+.thumbnail {
+  width: 100%;
+  padding-bottom: 50%;
+}
+
+.info {
+  width: calc(60% - 16px);
+  margin-left: 16px;
+}
+
+.title {
+  @include font-style($headline: true);
+
+  line-height: 1;
+  margin-bottom: 5px;
+
+  &:hover {
+    color: $cl-primary;
+    text-decoration: underline !important;
+  }
+}
+
+.staticWrap {
+  color: $cl-black54;
+  display: flex;
+}

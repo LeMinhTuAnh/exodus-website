@@ -1,0 +1,6 @@
+{
+  "name": "FAB",
+  "version": "0.1",
+  "private": true,
+  "main": "./FAB.js"
+}

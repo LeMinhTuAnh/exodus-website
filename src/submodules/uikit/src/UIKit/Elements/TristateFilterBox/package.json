@@ -1,0 +1,6 @@
+{
+  "name": "TristateFilterBox",
+  "version": "0.1",
+  "private": true,
+  "main": "TristateFilterBox.js"
+}

@@ -1,0 +1,78 @@
+@import "../../variables.scss";
+$btn-share-height: 36px;
+$btn-share-height-phone: 30px;
+
+.root {
+  display: flex;
+}
+
+.shareButton {
+  @include font-style($body: true);
+
+  width: 100px;
+  border-radius: 2px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: $cl-white;
+  padding: 8px 8px 10px;
+  height: $btn-share-height;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  @media (max-width: $screen-max-phone) {
+    height: $btn-share-height-phone;
+    width: 36px;
+    padding: 6px 6px 8px;
+  }
+}
+
+.caption {
+  @include font-style($body: true);
+
+  margin-left: 8px;
+  text-transform: uppercase;
+  color: $cl-white;
+  position: relative;
+  top: 2px;
+
+  @media (max-width: $screen-max-phone) {
+    display: none;
+  }
+}
+
+.shareCount {
+  @include font-style($smallbody: true);
+
+  display: inline-flex;
+  border: 1px solid $cl-black12;
+  background-color: $cl-white;
+  align-items: center;
+  position: relative;
+  left: -1px;
+  height: $btn-share-height;
+  padding: 10px;
+  border-radius: 0 2px 2px 0;
+
+  @media (max-width: $screen-max-phone) {
+    padding: 8px;
+    height: $btn-share-height-phone;
+  }
+
+  &::before {
+    content: " ";
+    position: absolute;
+    left: -10px;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent $cl-white transparent transparent;
+
+    @media (max-width: $screen-max-phone) {
+      left: -5px;
+      border-width: 5px;
+    }
+  }
+}

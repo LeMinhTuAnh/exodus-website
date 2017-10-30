@@ -1,0 +1,11 @@
+.mangaListItem {
+  // margin-bottom: 20px;
+
+  &:first-child {
+    margin-top: -12px;
+  }
+
+  &:nth-last-child(1) {
+    margin-bottom: 0;
+  }
+}

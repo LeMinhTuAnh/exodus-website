@@ -1,0 +1,54 @@
+// @import (reference) "../../../../components/resources/less/mixins.less";
+@import (reference) "../resources/less/mixins.less";
+
+.hud {
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 20px;
+  height: auto;
+  width: 200px;
+  text-align: center;
+  z-index: 999999;
+
+  &.on {
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.3s linear 0.1s;
+  }
+
+  &.off {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s 0.4s, opacity 0.3s linear 0.1s;
+  }
+
+//   img {
+//     max-width: 90px;
+//     max-height: 90px;
+//     margin: 0 0 20px;
+//   }
+
+  p {
+    color: #fff;
+    .text-ellipsis(16px, 1.38, 2);
+    margin: 0;
+  }
+}
+
+.hud-image {
+    width: 100%;
+    max-width: 96px;
+    max-height: 96px;
+    margin: 0 0 20px;
+}
+
+.hud-text {
+    font-family: Roboto;
+    font-size: 16px;
+    text-align: center;
+    color: #ffffff;
+}

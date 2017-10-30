@@ -1,0 +1,17 @@
+@import (reference) '../../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../../resources/less/variables.less';
+
+.collapse {
+  max-height: 89px;
+  height: auto;
+  overflow: hidden;
+  transition: max-height 2s;
+
+  @media (max-width: @screen-phone) {
+    max-height: 95px;
+  }
+
+  &.opened {
+    max-height: 4000px;
+  }
+}

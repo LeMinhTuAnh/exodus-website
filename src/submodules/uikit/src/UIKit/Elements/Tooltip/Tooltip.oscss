@@ -1,0 +1,52 @@
+@import "../../variables.scss";
+
+.mdl-tooltip {
+  @include font-style($smallbody: true);
+
+  color: $cl-white;
+  max-width: 400px;
+}
+
+.mdl-tooltip--bottom::after {
+  content: "";
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent $cl-black87 transparent;
+}
+
+.mdl-tooltip--left::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: -10px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent transparent $cl-black87;
+}
+
+.mdl-tooltip--right::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -5px;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent $cl-black87 transparent transparent;
+}
+
+.mdl-tooltip--top::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: $cl-black87 transparent transparent transparent;
+}

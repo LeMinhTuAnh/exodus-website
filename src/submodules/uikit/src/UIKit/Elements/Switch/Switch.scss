@@ -1,0 +1,33 @@
+@import "../../variables.scss"; // Project variable
+
+.root {
+  @include flex-center();
+
+  justify-content: flex-start;
+}
+
+.label {
+  @include font-style($body: true);
+
+  &.left {
+    margin-right: 24px;
+  }
+
+  &.right {
+    margin-left: 24px;
+  }
+
+  &.disabled {
+    color: $cl-black38;
+  }
+}
+
+.labelInput {
+  width: auto;
+}
+
+.dark {
+  .label {
+    color: $cl-white;
+  }
+}

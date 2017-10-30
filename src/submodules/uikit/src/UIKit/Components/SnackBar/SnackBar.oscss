@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+
+.mdl-snackbar {
+  &__text {
+    @include font-style($smallbody: true);
+
+    color: $cl-white;
+  }
+
+  &__action {
+    min-width: 80px;
+  }
+}

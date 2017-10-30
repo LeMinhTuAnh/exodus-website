@@ -1,0 +1,161 @@
+@import "../../variables.scss";
+$medium-height: 40px;
+$small-height: 36px;
+$large-height: 48px;
+
+.root {
+  @include flex-center($display: inline-flex);
+
+  border: 1px solid $cl-black12;
+  border-radius: 2px;
+  background-color: $cl-white;
+
+  &:hover {
+    border-color: $cl-black38;
+  }
+}
+
+// inputFocused == true
+.inputFocused {
+  &.root {
+    border-color: $cl-black38 !important;
+  }
+}
+
+.wrap {
+  @include flex-center($display: inline-flex);
+
+  width: 100%;
+  padding-right: 4px;
+  padding-left: 8px;
+  height: $medium-height;
+}
+
+.form {
+  @include flex-center($display: inline-flex);
+
+  flex-grow: 1;
+  line-height: 1;
+}
+
+.input {
+  @include font-style($smallbody: true);
+
+  vertical-align: super;
+  border: 0;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  height: $medium-height;
+  margin: 0;
+  outline: none;
+  margin-left: 4px;
+  flex-grow: 1;
+  color: $cl-black87;
+
+  &::placeholder {
+    color: $cl-black38;
+  }
+}
+
+.clear {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  line-height: 1;
+  background-color: $cl-white;
+  cursor: pointer;
+}
+
+// Fix not to show Clear button in IE
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .clear {
+    display: none;
+  }
+}
+
+.searchButton {
+  padding: 5px 12px;
+  margin: 0;
+  outline: none;
+  border: 0;
+  height: $medium-height;
+  text-align: center;
+  line-height: 1;
+  background-color: $cl-neutral-3;
+  cursor: pointer;
+}
+
+.icon {
+  color: $cl-black54;
+}
+
+// hasButton == true 
+.hasButton {
+  .searchButton {
+    border-radius: 0 2px 2px 0;
+  }
+
+  .wrap {
+    border-right: 1px solid $cl-black08;
+  }
+}
+
+// dark == true
+.dark {
+  .wrap {
+    background-color: $cl-neutral-1;
+
+    & * {
+      background-color: $cl-neutral-1;
+    }
+  }
+}
+
+// size == small
+.sizeSmall {
+  .wrap,
+  .searchButton {
+    height: $small-height;
+  }
+
+  .input {
+    height: $small-height;
+  }
+
+  .searchButton {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+}
+
+// size == large
+.sizeLarge {
+  .input {
+    @include font-style($body: true);
+
+    height: $large-height;
+  }
+
+  .wrap,
+  .searchButton {
+    height: $large-height;
+  }
+
+  .searchButton {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+}
+
+// disabled state
+.disabled {
+  &.root {
+    opacity: 0.38;
+
+    &:hover {
+      border-color: $cl-black12 !important;
+    }
+  }
+}
+

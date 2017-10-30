@@ -1,0 +1,4 @@
+[submodule "src/submodules/uikit"]
+	path = src/submodules/uikit
+	url = http://cosmos.notabasement.com/source/uikit-light-blue-web.git
+	branch = develop

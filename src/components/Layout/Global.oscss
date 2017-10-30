@@ -1,0 +1,15 @@
+@import "~slick-carousel/slick/slick.scss";
+@import "../../submodules/uikit/src/UIKit/variables.scss";
+
+// Style for Manga Reader page
+.pageMangaReader {
+  #header,
+  #footer {
+    display: none;
+  }
+
+  #page-content {
+    padding-top: 0;
+    overflow: hidden;
+  }
+}

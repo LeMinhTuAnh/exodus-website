@@ -1,0 +1,6 @@
+{
+  "name": "IconButton",
+  "version": "0.1",
+  "private": true,
+  "main": "./IconButton.js"
+}

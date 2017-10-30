@@ -1,0 +1,31 @@
+@import (reference) '../../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../../resources/less/variables.less';
+
+.title {
+  color: #000;
+  font-size: 24px;
+  font-weight: @fw-normal;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: 10px 0 20px;
+
+  @media (max-width: @screen-phone) {
+    font-size: 18px;
+    margin-top: 5px;
+  }
+
+  .link {
+    color: @brand-info;
+    font-size: 18px;
+    font-weight: @fw-normal;
+    line-height: 1.8;
+    text-transform: uppercase;
+    float: right;
+    margin-left: 1em;
+
+    @media (max-width: @screen-phone) {
+      line-height: 1.5;
+      font-size: 16px;
+    }
+  }
+}

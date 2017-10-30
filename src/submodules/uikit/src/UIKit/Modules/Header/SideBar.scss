@@ -1,0 +1,104 @@
+@import "../../variables.scss";
+$border: solid 1px rgba(189, 189, 189, 0.38);
+
+.root {
+  width: 100vw;
+  min-height: 100vh;
+  background-color: $cl-white;
+  position: absolute;
+  left: 0;
+  top: 0;
+  visibility: visible;
+  opacity: 1;
+  animation: root 0.24s ease;
+}
+
+@keyframes root {
+  0% {
+    visibility: hidden;
+    opacity: 0;
+  }
+
+  100% {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+.accountInfo {
+  height: 128px;
+  background-color: $cl-neutral-1;
+  position: relative;
+  border: $border;
+
+  .closeBtn {
+    position: absolute;
+    right: 0;
+    margin: 5px;
+    color: $cl-black87;
+  }
+}
+
+.links {
+  padding-left: 24px;
+  padding-right: 24px;
+}
+
+.headerLinks {
+  display: flex;
+  flex-direction: column;
+  border-bottom: $border;
+}
+
+.headerLink {
+  @include font-style($h2: true);
+
+  color: $cl-black54;
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  &:first-child {
+    padding-top: 24px;
+  }
+
+  &:last-child {
+    padding-bottom: 24px;
+  }
+}
+
+.footerLinks {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.footerLink {
+  @include font-style($body: true);
+
+  color: $cl-black54;
+  width: 50%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+.copyRight {
+  @include flex-center();
+
+  flex-direction: column;
+  height: 80px;
+  background-color: $cl-neutral-1;
+  border: $border;
+
+  a {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .text {
+    @include font-style($smallbody: true);
+
+    margin-top: 8px;
+    color: $cl-black38;
+  }
+}

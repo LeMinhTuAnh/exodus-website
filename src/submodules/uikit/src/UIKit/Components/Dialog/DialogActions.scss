@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+$padding-small: 8px;
+$padding: 20px;
+$padding-big: 24px;
+
+.root {
+  display: flex;
+  justify-content: flex-end;
+  padding: $padding-small;
+  align-items: center;
+}

@@ -1,0 +1,48 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+
+.tableContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.tableRoot {
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+}
+
+.tableHeader {
+  @include font-style($subtext: true);
+
+  display: flex;
+  align-items: center;
+  height: 40px;
+
+  @media (max-width: $screen-max-phone) {
+    display: none !important;
+  }
+}
+
+.headerOne {
+  padding-left: $gutter;
+}
+
+.headerThree {
+  padding-right: $gutter;
+  text-align: right;
+}
+
+.showMoreButton {
+  margin-left: $gutter;
+  margin-right: $gutter;
+}
+
+.loading {
+  display: flex;
+  margin: 30px auto;
+}
+
+.hiddenPhone {
+  @media (max-width: $screen-max-phone) {
+    display: none !important;
+  }
+}

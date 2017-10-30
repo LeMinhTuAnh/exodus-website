@@ -1,0 +1,9 @@
+@import "../../submodules/uikit/src/UIKit/variables.scss";
+
+.active {
+  color: $cl-primary !important;
+
+  & > li > div {
+    color: $cl-primary;
+  }
+}

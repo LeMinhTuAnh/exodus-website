@@ -1,0 +1,111 @@
+@import "../../variables.scss";
+$padding-x: 32px;
+
+.root {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: $header-height;
+  background-color: $cl-white;
+  box-shadow: $elevation-2;
+  z-index: $z-index-9;
+  padding: 0 40px;
+
+  @media (max-width: $screen-max-tablet) {
+    height: $header-height-phone;
+    padding: 0 10px 0 16px;
+  }
+}
+
+.wrap {
+  @include flex-center();
+
+  justify-content: space-between;
+  height: $header-height;
+
+  @media (max-width: $screen-max-tablet) {
+    height: $header-height-phone;
+  }
+}
+
+// Left section
+
+// .left {
+//   @include flex-center();
+
+//   justify-content: flex-start;
+// }
+
+// .logoLink {
+//   margin-right: 56px;
+
+//   @media (max-width: $screen-max-tablet) {
+//     img {
+//       height: 36px;
+//     }
+//   }
+// }
+
+// .links {
+//   .link {
+//     @include font-style($h3: true);
+
+//     display: inline-block;
+//     color: $cl-black54;
+//     margin-right: $padding-x;
+
+//     &:hover,
+//     &:visited,
+//     &:focus {
+//       text-decoration: none;
+//     }
+
+//     &.active {
+//       color: $cl-primary;
+//     }
+//   }
+
+//   @media (max-width: $screen-max-tablet) {
+//     display: none;
+//   }
+// }
+
+// .menu {
+//   position: relative;
+// }
+
+// .menuBtn {
+//   display: inline-block;
+// }
+
+// .dropIcon {
+//   vertical-align: sub;
+//   font-size: 21px;
+// }
+
+// // Right section
+
+// .right {
+//   @include flex-center();
+
+//   justify-content: flex-end;
+
+//   .rightDesktop {
+//     @media (max-width: $screen-max-tablet) {
+//       display: none;
+//     }
+//   }
+
+//   .rightPhone {
+//     display: none;
+
+//     @media (max-width: $screen-max-tablet) {
+//       display: block;
+//     }
+//   }
+
+//   .iconButton {
+//     color: $cl-black87;
+//   }
+// }

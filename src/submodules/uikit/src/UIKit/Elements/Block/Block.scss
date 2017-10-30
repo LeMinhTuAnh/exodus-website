@@ -1,0 +1,31 @@
+/* stylelint-disable */
+
+@import "../../variables.scss";
+
+.root {
+  background-color: #fff;
+  padding: $gutter;
+  border-radius: 2px;
+  box-shadow: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+  margin-bottom: $gutter;
+  position: relative;
+
+  @media (max-width: $screen-max-phone-sm) {
+    margin-left: -($gutter / 2);
+    margin-right: -($gutter / 2);
+  }
+}
+
+.no-background {
+  background-color: transparent !important;
+  box-shadow: none;
+}
+
+.no-padding {
+  padding: 0;
+
+  @media (max-width: $screen-max-phone-sm) {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}

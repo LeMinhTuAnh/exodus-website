@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+$padding-small: 8px;
+$padding: 20px;
+$padding-big: 24px;
+
+.root {
+  max-height: calc(70vh);
+  padding: 0 $padding-big $padding;
+  overflow-y: auto;
+}

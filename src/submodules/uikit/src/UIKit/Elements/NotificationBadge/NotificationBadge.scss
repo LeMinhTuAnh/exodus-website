@@ -1,0 +1,29 @@
+@import "../../variables.scss";
+
+.rootWithNumber {
+  @include flex-center($display: inline-flex);
+  @include font-style($smallbody: true);
+
+  font-weight: $fw-medium;
+  color: $cl-white;
+  background-color: $cl-warning;
+  height: 24px;
+  min-width: 24px;
+  width: auto;
+  border-radius: 2px;
+  padding: 4px;
+
+  @media (max-width: $screen-max-phone) {
+    height: 18px;
+    padding: 2px;
+  }
+}
+
+.rootNoNumber {
+  display: inline-block;
+  border: 1px solid $cl-white;
+  background-color: $cl-warning;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}

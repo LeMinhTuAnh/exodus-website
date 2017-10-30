@@ -1,0 +1,11 @@
+@import '../../../../submodules/uikit/src/UIKit/variables.scss';
+
+.root {
+  .item {
+    @include font-style($body: true);
+
+    line-height: 2 !important;
+    display: inline-block;
+    width: 50%;
+  }
+}

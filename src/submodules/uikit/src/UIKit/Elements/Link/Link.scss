@@ -1,0 +1,9 @@
+@import "../../variables.scss";
+
+.root {
+  color: $cl-primary;
+
+  &:hover {
+    color: $cl-primary !important;
+  }
+}

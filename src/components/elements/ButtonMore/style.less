@@ -1,0 +1,55 @@
+@import (reference) '../../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../../resources/less/variables.less';
+
+.buttonMore {
+  margin: -(@grid-gutter-width / 2);
+  margin-top: 20px;
+
+  .button {
+    background: rgba(224, 224, 224, 0.2);
+    border: 0 none;
+    color: @brand-info;
+    font-size: 14px;
+    font-weight: @fw-normal;
+    line-height: 1;
+    text-transform: uppercase;
+    display: block;
+    outline: none;
+    margin: 0;
+    padding: 10px (@grid-gutter-width / 2);
+    width: 100%;
+
+    &:hover,
+    &:active {
+      background-color: @brand-info;
+      color: #fff;
+    }
+
+    @media (max-width: @screen-phone) {
+      margin-top: (@grid-gutter-width / 4);
+    }
+
+    & > i {
+      margin-left: 0.5em;
+    }
+
+    span {
+      &::after {
+        border-left: 0.4em solid transparent;
+        border-right: 0.4em solid transparent;
+        border-top: 0.45em solid;
+        content: ' ';
+        display: inline-block;
+        height: 0;
+        width: 0;
+        vertical-align: middle;
+        margin-left: 0.5em;
+      }
+
+      &.opened::after {
+        border-bottom: 0.45em solid;
+        border-top: 0 none;
+      }
+    }
+  }
+}

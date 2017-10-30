@@ -1,0 +1,15 @@
+@import "../../../../variables.scss";
+
+.button {
+  position: absolute;
+  top: 50%;
+  z-index: $z-index-1;
+
+  &.next {
+    right: 16px;
+  }
+
+  &.prev {
+    left: 16px;
+  }
+}

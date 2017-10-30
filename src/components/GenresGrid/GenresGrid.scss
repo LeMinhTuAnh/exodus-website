@@ -1,0 +1,12 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+
+.item {
+  @include font-style($body: true);
+
+  display: block;
+  margin-bottom: 32px;
+
+  &:hover {
+    color: $cl-primary;
+  }
+}

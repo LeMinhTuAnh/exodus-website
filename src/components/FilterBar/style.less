@@ -1,0 +1,236 @@
+@import (reference) '../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../resources/less/variables.less';
+
+.filterBar {
+  background: #fafafa;
+  margin-left: -(@grid-gutter-width / 2);
+  margin-right: -(@grid-gutter-width / 2);
+  margin-bottom: (@grid-gutter-width / 2);
+  padding: 10px (@grid-gutter-width / 2);
+
+  .comboBoxes {
+    float: right;
+    text-align: right;
+
+    .select {
+      display: inline-block;
+
+      @media (max-width: @screen-sm-max) {
+        margin-left: (@grid-gutter-width / 4);
+      }
+
+      & > label {
+        font-weight: @fw-medium;
+        margin-right: (@grid-gutter-width / 2);
+
+        @media (max-width: @screen-sm-max) {
+          font-size: 14px;
+          margin-right: (@grid-gutter-width / 4);
+        }
+
+        @media (max-width: @screen-xs-max) {
+          font-size: 13px;
+        }
+
+        @media (max-width: @screen-phone) {
+          display: none;
+        }
+      }
+
+      select {
+        width: 110px;
+        font-weight: @fw-medium;
+
+        @media (max-width: @screen-sm-max) {
+          width: 90px;
+        }
+      }
+    }
+  }
+
+  .btnFilter {
+    border-radius: 0;
+    box-shadow: 0 0 0 1px #d1d3d4 inset !important;
+    background-color: #fff;
+    color: inherit;
+    font-size: 16px;
+    padding: 8px 16px 9px;
+    min-width: 120px;
+    width: 120px;
+    float: left;
+    margin-right: 0.7em;
+    font-weight: @fw-normal;
+
+    @media (max-width: @screen-sm-max) {
+      font-size: 14px;
+    }
+
+    @media (max-width: @screen-xs-max) {
+      font-size: 13px;
+      min-width: 100px;
+      width: 100px;
+    }
+
+    &:focus {
+      box-shadow: 0 0 0 1px @brand-info inset !important;
+    }
+
+    .icon {
+      height: 12px;
+      width: 18px;
+      margin-right: 0.6em;
+
+      @media (max-width: @screen-xs-max) {
+        height: 10px;
+      }
+    }
+
+    &.filtering {
+      border-radius: @border-radius-base;
+      box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1) !important;
+      background-color: @brand-info;
+      color: #fff;
+
+      .icon {
+        fill: #fff;
+      }
+
+      &:hover {
+        background-color: @brand-primary;
+      }
+    }
+  }
+
+  .activeFilters {
+    @media (max-width: @screen-xs-max) {
+      display: none;
+    }
+
+    .item {
+      display: inline-block;
+      background: #fff;
+      border: 1px solid #d1d3d4;
+      border-radius: @border-radius-base;
+      padding: 6px 7px 4px 10px;
+      vertical-align: middle;
+      white-space: nowrap;
+      margin-right: 0.7em;
+      margin-bottom: 0.7em;
+
+      @media (max-width: @screen-sm-max) {
+        font-size: 14px;
+      }
+
+      @media (max-width: @screen-xs-max) {
+        padding: 8px 10px 9px;
+        font-size: 13px;
+      }
+
+      .remove {
+        float: right;
+        margin-left: 20px;
+        font-size: 11px;
+        line-height: 1.5;
+        margin-top: 0.5em;
+
+        i {
+          font-size: inherit;
+        }
+      }
+    }
+
+    .itemLabel {
+      color: #747474;
+      margin-right: 0.3em;
+    }
+  }
+
+  .formFilter {
+    clear: left;
+    padding-bottom: (@grid-gutter-width / 2);
+  }
+
+  .label {
+    color: @gray-light;
+    font-size: 14px;
+    font-weight: @fw-normal;
+    display: block;
+    margin-top: 15px;
+  }
+
+  .column {
+    float: left;
+    width: 16.66%;
+    margin-bottom: 3px;
+
+    @media (max-width: @screen-sm-max) {
+      width: 33.3333%;
+    }
+
+    @media (max-width: @screen-phone) {
+      width: 50%;
+    }
+  }
+
+  .radioGroup {
+    overflow: hidden;
+  }
+
+  .genres {
+    overflow: hidden;
+    padding: 0;
+  }
+
+  .radioButton {
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: @fw-medium;
+    white-space: nowrap;
+
+    &::before {
+      background-image: url('/svg/radio.svg');
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: 100% auto;
+      content: ' ';
+      display: inline-block;
+      height: 13px;
+      width: 13px;
+      margin-right: 0.6em;
+      margin-bottom: 0.2em;
+      vertical-align: middle;
+    }
+
+    &.checked::before {
+      background-position: 0 100%;
+    }
+
+    & > input[type='radio'] {
+      display: none;
+    }
+  }
+
+  .buttons {
+    margin-top: (@grid-gutter-width / 2);
+    text-align: center;
+
+    .button {
+      min-width: 150px;
+
+      & + .button {
+        margin-left: (@grid-gutter-width / 2);
+      }
+    }
+  }
+
+  &.expanded {
+    .btnFilter {
+      float: none;
+    }
+
+    .activeFilters,
+    .comboBoxes {
+      display: none;
+    }
+  }
+}

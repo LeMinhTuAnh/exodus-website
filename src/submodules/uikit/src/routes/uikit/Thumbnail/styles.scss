@@ -1,0 +1,24 @@
+.thumbnailWrap {
+  width: 300px;
+}
+
+.thumbnailRatio2_3 {
+  width: 100%;
+  padding-bottom: 150%;
+  height: 0;
+}
+
+.thumbnailRatio1_1 {
+  width: 100%;
+  padding-bottom: 100%;
+  height: 0;
+}
+
+.thumbnailRatio3_2 {
+  width: 100%;
+  padding-bottom: calc(100% / 3 * 2);
+}
+
+.title {
+  margin-bottom: 10px;
+}

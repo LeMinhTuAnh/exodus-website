@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="133" height="133" viewBox="0 0 133 133">
+    <defs>
+        <rect id="b" width="127" height="127" rx="63.5"/>
+        <filter id="a" width="107.9%" height="107.9%" x="-3.9%" y="-3.1%" filterUnits="objectBoundingBox">
+            <feOffset dy="1" in="SourceAlpha" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1.5"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.29 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g transform="translate(3 2)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <use fill="#F7596B" xlink:href="#b"/>
+        </g>
+        <path d="M44 57h46v46H44z"/>
+        <path fill="#FFF" fill-rule="nonzero" d="M66.583 94.78l-3.854-3.509C49.039 78.857 40 70.67 40 60.621 40 52.433 46.433 46 54.62 46c4.626 0 9.066 2.153 11.963 5.556C69.481 48.153 73.92 46 78.546 46c8.187 0 14.62 6.433 14.62 14.62 0 10.05-9.038 18.237-22.728 30.678l-3.855 3.482z"/>
+    </g>
+</svg>

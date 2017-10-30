@@ -1,0 +1,30 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+
+.artworkGrid {
+  justify-content: flex-start !important;
+  margin-right: -$gutter / 2;
+  margin-left: -$gutter / 2;
+}
+
+.item {
+  display: block;
+  width: calc(20% - 20px);
+  margin-bottom: $gutter;
+  margin-left: $gutter / 2;
+  margin-right: $gutter / 2;
+
+  @media (max-width: $screen-max-desktop) {
+    width: calc(25% - 20px);
+  }
+
+  @media (max-width: $screen-max-phone) {
+    width: calc(100% / 3 - 20px);
+  }
+}
+
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150%;
+}

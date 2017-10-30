@@ -1,0 +1,32 @@
+@import (reference) '../../components/resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../../components/resources/less/variables.less';
+
+.simplePage {
+  p {
+    font-size: 16px;
+
+    @media (max-width: @screen-sm) {
+      font-size: 14px;
+    }
+  }
+
+  a {
+    color: @brand-info;
+  }
+}
+
+.resetPasswordInput {
+  width: 260px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: #fff;
+  border: solid 1px #d1d3d4;
+  opacity: 0.38;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.87);
+  margin-right: 12px;
+  padding-left: 16px;
+  font-weight: 400;
+}

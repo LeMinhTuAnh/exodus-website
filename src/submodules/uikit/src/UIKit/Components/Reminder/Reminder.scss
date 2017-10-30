@@ -1,0 +1,54 @@
+@import "../../variables.scss";
+$padding: 16px;
+$padding-s: 12px;
+$padding-xs: 8px;
+
+.root {
+  position: relative;
+  right: 0;
+  width: 400px;
+  padding: 16px 36px 16px 16px;
+  margin: 0;
+  margin-top: $padding-xs;
+  background-color: $cl-black87;
+  border-radius: 10px;
+  animation: yo 0.4s ease;
+  transition: padding 0.4s ease, max-height 0.3s ease;
+  transform: translateZ(0);
+  color: white;
+  overflow: hidden;
+  max-height: 100vh;
+
+  @media (max-width: $screen-max-phone) {
+    width: 320px;
+    border-radius: 8px;
+    padding: 12px 24px 12px 12px;
+  }
+
+  &.deactive {
+    max-height: 0;
+    padding: 0;
+  }
+}
+
+.closeButton {
+  padding: 8px;
+  margin: 0;
+  outline: 0;
+  background: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+@keyframes yo {
+  0% {
+    right: -400px;
+  }
+
+  100% {
+    right: 0;
+  }
+}

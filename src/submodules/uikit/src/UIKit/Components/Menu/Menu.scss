@@ -1,0 +1,13 @@
+@import "../../variables.scss";
+$padding-y: 8px;
+
+.root {
+  background-color: $cl-white;
+  box-shadow: $elevation-2;
+  width: 128px;
+  min-width: 128px;
+  max-width: 100vw;
+  max-height: calc(100vh - 24px);
+  overflow-y: auto;
+  padding: $padding-y 0;
+}

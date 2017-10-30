@@ -1,0 +1,26 @@
+@import "../../variables.scss";
+
+.titleList {
+  @include flex-center();
+
+  justify-content: flex-start;
+  overflow-x: auto;
+}
+
+.title {
+  position: relative;
+  text-align: center;
+  color: $cl-black54;
+  padding: 16px 24px;
+  cursor: pointer;
+  text-transform: uppercase;
+
+  &.active {
+    color: $cl-primary;
+    border-bottom: 2px solid $cl-primary;
+  }
+
+  @media (max-width: $screen-max-phone) {
+    padding: 12px 16px;
+  }
+}

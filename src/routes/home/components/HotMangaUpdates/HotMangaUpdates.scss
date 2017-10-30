@@ -1,0 +1,17 @@
+@import "../../../../submodules/uikit/src/UIKit/variables.scss";
+
+.grid {
+  margin: -8px;
+}
+
+.item {
+  width: calc((100% - 16px) / 5);
+
+  @media (max-width: $screen-max-tablet) {
+    width: calc((100% - 16px) / 4);
+  }
+
+  @media (max-width: $screen-max-phone-sm) {
+    width: calc((100% - 16px) / 3);
+  }
+}

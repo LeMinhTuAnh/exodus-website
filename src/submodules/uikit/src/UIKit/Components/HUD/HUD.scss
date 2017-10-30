@@ -1,0 +1,65 @@
+@import "../../variables.scss";
+
+.root {
+  background: $cl-black87;
+  border-radius: 10px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px 20px;
+  height: auto;
+  width: 200px;
+  text-align: center;
+  z-index: 999999;
+
+  &.on {
+    visibility: visible;
+    opacity: 1;
+    transition: all 0.3s linear 0.1s;
+  }
+
+  &.off {
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s linear 0.1s;
+  }
+
+  @media (max-width: $screen-max-phone) {
+    width: 160px;
+    padding: 20px;
+  }
+}
+
+.text {
+  @include font-style($headline: true);
+  @include flex-center($display: flex);
+
+  color: $cl-white;
+  width: 160px;
+  min-height: 44px;
+  margin: 0 auto;
+
+  @media (max-width: $screen-max-phone) {
+    width: 120px;
+    min-height: 36px;
+  }
+}
+
+.imgWrap {
+  margin: 0 auto 8px;
+  max-width: 90px;
+  // max-height: 90px;
+  width: auto;
+  height: auto;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  @media (max-width: $screen-max-phone) {
+    max-width: 50px;
+    // max-height: 50px;
+  }
+}

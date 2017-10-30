@@ -1,0 +1,11 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+
+.page {
+  background-color: $cl-neutral-2;
+  // padding-top: $header-height + $gutter;
+  flex-grow: 1;
+
+  @media (max-width: $screen-max-tablet) {
+    // padding-top: $header-height-phone + $gutter;
+  }
+}

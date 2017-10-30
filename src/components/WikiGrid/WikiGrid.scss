@@ -1,0 +1,88 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+@import '../variables.scss';
+
+.wikiGrid {
+  .personItem {
+    width: calc(100% / 6);
+
+    @media (max-width: $screen-max-tablet) {
+      width: calc(100% / 5);
+    }
+
+    @media (max-width: $screen-max-phone) {
+      width: calc(100% / 4);
+    }
+
+    @media (max-width: $screen-max-phone-sm) {
+      width: calc(100% / 3);
+    }
+
+    // Fix bug T1247
+    &.big {
+      padding: 10px 14px;
+
+      @media (max-width: $screen-max-phone) {
+        padding: 10px;
+      }
+    }
+  }
+
+  &.small {
+    .personItem {
+      width: calc(100% / 5);
+
+      @media (max-width: $screen-max-desktop) {
+        width: calc(100% / 4);
+      }
+
+      @media (max-width: $screen-max-phone) {
+        width: calc(100% / 3);
+      }
+    }
+  }
+
+  // Fix bug T1247
+  & > .wrap.wrapBig {
+    margin-left: -6px;
+    margin-right: -6px;
+
+    @media (max-width: $screen-max-phone) {
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+  }
+}
+
+.toolbar {
+  @include flex-center();
+
+  justify-content: space-between;
+  background-color: $cl-neutral-1;
+  margin-left: -$gutter;
+  margin-right: -$gutter;
+  margin-bottom: 24px;
+  padding-left: $gutter;
+  padding-right: $gutter;
+  height: 60px;
+}
+
+.counting {
+  @include font-style($headline: true);
+}
+
+.select {
+  margin-left: auto;
+
+  select {
+    width: 90px;
+  }
+
+  .label {
+    margin-right: 8px;
+  }
+}
+
+.loading {
+  display: flex;
+  margin: 30px auto;
+}

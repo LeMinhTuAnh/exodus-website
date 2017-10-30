@@ -1,0 +1,44 @@
+// Text overflow ellipsis for multiple line
+// Eclipse only displays on webkit browser
+.text-ellipsis (@font-size, @line-height, @lines-to-show) {
+  display: block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-height: (@font-size * @line-height * @lines-to-show); /* Fallback for non-webkit */
+  font-size: @font-size;
+  line-height: @line-height;
+  -webkit-line-clamp: @lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Text overflow ellipsis for multiple line
+// cross browser version
+// @bgColor must be a plain color
+// NOT TESTED
+.multiLineEllipsis (@font-size, @line-height, @lines-to-show, @bgColor: white) {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  line-height: @line-height;
+  max-height: (@font-size * @line-height * @lines-to-show);
+  font-size: @font-size;
+  text-align: justify;
+  margin-right: -1em;
+  padding-right: 1em;
+  &:before {
+    content: '...';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: 0.2em;
+    background: @bgColor;
+  }
+}

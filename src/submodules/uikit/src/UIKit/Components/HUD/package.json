@@ -1,0 +1,6 @@
+{
+  "name": "HUD",
+  "version": "0.1",
+  "private": true,
+  "main": "HUD.js"
+}

@@ -1,0 +1,49 @@
+@import (reference) '../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../resources/less/variables.less';
+
+@hPadding: 13px;
+
+.getApp {
+  width: 100vw;
+  background: #fafafa;
+  padding: 10px;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 2002;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  height: 64px;
+
+  .desc {
+    font-size: 14px;
+  }
+
+  .closeIcon {
+    padding: 8px;
+    display: flex;
+    margin-left: -10px;
+    color: gray;
+  }
+
+  .button {
+    font-size: 16px;
+    margin-left: auto;
+    background-color: @brand-info;
+    color: #fff;
+    height: 44px;
+    border-radius: 4px;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none !important;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+  }
+}

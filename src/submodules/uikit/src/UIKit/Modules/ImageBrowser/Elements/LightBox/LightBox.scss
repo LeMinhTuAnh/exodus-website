@@ -1,0 +1,36 @@
+@import "../../../../variables.scss";
+
+.lightBox {
+  position: fixed;
+  z-index: $z-index-8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: $cl-black54;
+  will-change: transform, opcacity;
+}
+
+.lightBoxEnter {
+  opacity: 0;
+  transform: scale(1.15);
+  will-change: transform, opcacity;
+}
+
+.lightBoxEnterActive {
+  transform: scale(1);
+  opacity: 1;
+  transition: transform 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.3s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+}
+
+.lightBoxExit {
+  transform: scale(1);
+  opacity: 1;
+
+  &.lightBoxExitActive {
+    opacity: 0;
+    transform: scale(1.15);
+    transition: transform 0.2s cubic-bezier(0.465, 0.183, 0.153, 0.946), opacity 0.2s cubic-bezier(0.465, 0.183, 0.153, 0.946);
+  }
+}
+

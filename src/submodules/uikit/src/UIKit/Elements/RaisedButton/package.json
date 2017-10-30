@@ -1,0 +1,6 @@
+{
+  "name": "RaisedButton",
+  "version": "0.1",
+  "private": true,
+  "main": "./RaisedButton.js"
+}

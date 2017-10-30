@@ -1,0 +1,9 @@
+@import "../../variables.scss";
+
+.root {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: center;
+  flex-flow: row wrap;
+}

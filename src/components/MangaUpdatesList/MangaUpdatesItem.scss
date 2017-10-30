@@ -1,0 +1,88 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+
+.root {
+  @include flex-center();
+
+  justify-content: flex-start;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  &:nth-child(odd) {
+    background-color: $cl-neutral-1;
+  }
+}
+
+.columnOne {
+  padding-left: $gutter;
+}
+
+.thumbnail {
+  width: 50px;
+  height: 70px;
+  margin-right: 12px;
+}
+
+.mangaItem {
+  @include flex-center();
+
+  justify-content: flex-start;
+}
+
+.info {
+  @include flex-center();
+
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.mangaTitle {
+  @include font-style($headline: true);
+}
+
+.subtext {
+  @include font-style($smallbody: true);
+}
+
+.updated {
+  @include font-style($smallbody: true);
+
+  text-align: right;
+  padding-right: $gutter;
+}
+
+.chapter {
+  @include flex-center();
+
+  justify-content: flex-start;
+}
+
+.newChapter {
+  @include font-style($body: true);
+  @include truncate();
+
+  display: inline-block;
+  width: 100%;
+}
+
+.newIndicator {
+  margin-right: 5px;
+}
+
+.showMoreText {
+  @include font-style($smallbody: true);
+}
+
+.hiddenPhone {
+  @media (max-width: $screen-max-phone) {
+    display: none !important;
+  }
+}
+
+.showPhone {
+  display: none;
+  margin-top: 10px;
+
+  @media (max-width: $screen-max-phone) {
+    display: block !important;
+  }
+}

@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+.loading {
+  width: 40px;
+  height: 40px;
+
+  @media (max-width: $screen-max-phone) {
+    width: 28px;
+    height: 28px;
+  }
+}

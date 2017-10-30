@@ -1,0 +1,73 @@
+@import (reference) '../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../resources/less/variables.less';
+
+@btn-height: 36px;
+@btn-height-phone: 30px;
+
+.root {
+  margin-right: 10px;
+  display: flex;
+}
+
+.shareButton {
+  width: 110px;
+  height: @btn-height;
+  border-radius: 2px;
+  background-color: #00aced;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  text-decoration: none !important;
+  color: white !important;
+  line-height: 1;
+  padding: 7px;
+
+  @media (max-width: @screen-sm) {
+    width: auto;
+    height: @btn-height-phone;
+    padding: 10px;
+  }
+}
+
+.text {
+  line-height: 1;
+  margin-left: 8px;
+
+  @media (max-width: @screen-sm) {
+    display: none;
+  }
+}
+
+.share {
+  display: inline-flex;
+  border: 1px solid #e6e6e6;
+  align-items: center;
+  height: @btn-height;
+  padding: 9px;
+  position: relative;
+  left: -2px;
+  background-color: white;
+  font-weight: 400;
+
+  @media (max-width: @screen-sm) {
+    height: @btn-height-phone;
+    font-size: 12px;
+  }
+
+  &::before {
+    content: ' ';
+    position: absolute;
+    // top: 100%; /* At the bottom of the tooltip */
+    left: -10px;
+    margin-left: -5px;
+    border-width: 8px;
+    border-style: solid;
+    border-color: transparent white transparent transparent;
+
+    @media (max-width: @screen-sm) {
+      border-width: 5px;
+      left: -5px;
+    }
+  }
+}

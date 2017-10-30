@@ -1,0 +1,70 @@
+@import "../../variables.scss";
+$padding: 12px;
+
+.root {
+  display: inline-block;
+  padding: 8px;
+  padding-bottom: $padding;
+  border-radius: 4px;
+  transition: background-color 0.15s ease;
+  vertical-align: top;
+
+  &:hover {
+    background-color: $cl-black08;
+
+    .thumbnailOverlay {
+      display: block !important;
+    }
+  }
+
+  .mangaTitle {
+    @include font-style($headline: true);
+    @include truncate-multiline($lh-headline, 2);
+
+    margin-bottom: 2px;
+  }
+
+  .author,
+  .subtext,
+  .newChapter {
+    @include font-style($smallbody: true);
+  }
+
+  .newChapter {
+    display: flex;
+
+    .text {
+      @include truncate-multiline($lh-smallbody, 2);
+    }
+  }
+}
+
+.thumbnailWrap {
+  display: block;
+  position: relative;
+}
+
+.thumbnail {
+  display: block;
+  width: 100%;
+  height: 0;
+  padding-bottom: 150%;
+  margin-bottom: $padding;
+}
+
+.thumbnailOverlay {
+  display: none;
+  background-color: $cl-black12;
+  width: 100%;
+  padding-bottom: 150%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: $z-index-1;
+}
+
+.newIndicator {
+  margin-right: 4px;
+}

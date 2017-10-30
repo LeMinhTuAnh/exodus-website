@@ -1,0 +1,6 @@
+{
+  "name": "FlatButton",
+  "version": "0.1",
+  "private": true,
+  "main": "./FlatButton.js"
+}

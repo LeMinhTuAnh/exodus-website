@@ -1,0 +1,29 @@
+@import (reference) '../../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../../resources/less/variables.less';
+
+.pageTitle {
+  margin: 0 30px 15px 0;
+
+  h1 {
+    margin: 0;
+    line-height: 43px;
+    font-weight: @fw-normal;
+
+    @media (max-width: @screen-xs-max) {
+      font-size: 21px;
+      line-height: 25px;
+    }
+  }
+
+  .backLink {
+    display: inline-block;
+    color: @brand-info;
+    font-weight: @fw-medium;
+    text-transform: uppercase;
+    margin: 0 0 (@grid-gutter-width / 4);
+
+    @media (max-width: @screen-xs-max) {
+      font-size: 12px;
+    }
+  }
+}

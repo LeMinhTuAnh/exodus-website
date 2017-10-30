@@ -1,0 +1,12 @@
+@import "../../variables.scss";
+
+.root {
+  margin: -$gutter;
+  margin-top: $gutter;
+}
+
+.button {
+  display: block !important;
+  background-color: $cl-neutral-1;
+  width: 100%;
+}

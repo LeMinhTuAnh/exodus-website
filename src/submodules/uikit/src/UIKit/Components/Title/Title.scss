@@ -1,0 +1,65 @@
+@import "../../variables.scss";
+
+.root {
+  @include flex-center();
+
+  justify-content: flex-start;
+}
+
+.link {
+  @include font-style($h3: true);
+
+  color: $cl-primary;
+  margin-left: auto;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.pageTitleWrap {
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.pageTitle {
+  @include font-style($h1: true);
+
+  padding: 0;
+  margin: 0;
+}
+
+.blockTitleWrap {
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 20px;
+
+  @media (max-width: $screen-max-phone) {
+    margin-top: 5px;
+  }
+}
+
+.blockTitle {
+  @include font-style($h2: true);
+
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+.listTitleWrap {
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 20px;
+
+  @media (max-width: $screen-max-phone) {
+    margin-top: 4px;
+    margin-bottom: 14px;
+  }
+}
+
+.listTitle {
+  @include font-style($headline: true);
+
+  padding: 0;
+  margin: 0;
+}

@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+$padding-small: 8px;
+$padding: 20px;
+$padding-big: 24px;
+
+.root {
+  @include font-style($h2: true);
+
+  padding: $padding-big $padding-big $padding;
+}

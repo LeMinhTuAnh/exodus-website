@@ -1,0 +1,279 @@
+// Typography variable of UIKit
+
+// ** I. VARIABLE
+// 1. COLOR
+// 2. FONT WEIGHT
+// 3. FONT SIZE
+// 4. FONT FAMILY
+// 5. MEDIA QUERY
+// 6. LINE HEIGHT
+// 7. ELEVATION
+// 8. Z-INDEX
+// 9. HEADER 
+
+// ** II. MIXINS
+
+// ** III. BOOTSTRAP VARIABLES OVERRIDES
+
+// ===============
+
+// 1. COLOR
+$cl-primary: #29b6f6 !default;
+$cl-warning: #ff5722 !default;
+$cl-danger: #f33 !default;
+$cl-black: #000 !default;
+$cl-black87: rgba(0, 0, 0, 0.87) !default;
+$cl-black54: rgba(0, 0, 0, 0.54) !default;
+$cl-black38: rgba(0, 0, 0, 0.38) !default;
+$cl-black12: rgba(0, 0, 0, 0.12) !default;
+$cl-black08: rgba(0, 0, 0, 0.08) !default;
+$cl-white: #fff;
+$cl-white70: rgba(255, 255, 255, 0.7) !default;
+$cl-white50: rgba(255, 255, 255, 0.5) !default;
+$cl-white12: rgba(255, 255, 255, 0.12) !default;
+$cl-neutral-1: #fafafa !default;
+$cl-neutral-2: #f5f5f5 !default;
+$cl-neutral-3: #eee !default;
+$cl-neutral-4: #bdbdbd !default;
+$cl-neutral-5: #212121 !default;
+
+// 2. FONT WEIGHT
+$fw-light: 300 !default;
+$fw-regular: 400 !default;
+$fw-medium: 500 !default;
+$fw-bold: 600 !default;
+
+// 3. FONT SIZE
+$fs-root: 100% !default; // 16px by default
+$fs-h1: 2.25rem !default; // 36px
+$fs-h2: 1.5rem !default; // 24px
+$fs-h3: 1.125rem !default; // 18px 
+$fs-headline: 1rem !default; // 16px
+$fs-body: 1rem !default; // 16px
+$fs-smallbody: 0.875rem !default; // 14px
+$fs-subtext: 0.75rem !default; // 12px
+$fs-phone-h1: 1.3125rem !default; // 21px
+$fs-phone-h2: 1.125rem !default; // 18px
+$fs-phone-h3: 1rem !default; // 16px
+$fs-phone-headline: 0.875rem !default; // 14px
+$fs-phone-body: 0.875rem !default; // 14px
+$fs-phone-smallbody: 0.75rem !default; // 12px
+$fs-phone-subtext: 0.625rem !default; // 10px
+
+// 4. FONT FAMILY
+// <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700" rel="stylesheet">
+$font-family: Roboto, -apple-system, BlinkMacSystemFont, "Segoe UI", "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
+
+// 5. MEDIA QUERY
+$screen-xs: 0 !default;
+$screen-sm: 576px !default; // Base on Bootstrap.v4
+$screen-md: 768px !default;
+$screen-lg: 992px !default;
+$screen-xl: 1320px !default;
+$screen-min-phone-sm: $screen-xs;
+$screen-min-phone-lg: $screen-sm;
+$screen-min-tablet: $screen-md;
+$screen-min-destop: $screen-lg;
+$screen-min-desktop-lg: $screen-xl;
+$screen-max-phone-sm: $screen-sm - 1;
+$screen-max-phone: $screen-md - 1;
+$screen-max-tablet: $screen-lg - 1;
+$screen-max-desktop: $screen-xl - 1;
+
+// 6. LINE HEIGHT
+$lh-h1: 42px !default;
+$lh-h2: 28px !default;
+$lh-h3: 21px !default;
+$lh-headline: 19px !default;
+$lh-body: 24px !default;
+$lh-smallbody: 16px !default;
+$lh-subtext: 14px !default;
+$lh-phone-h1: 24px !default;
+$lh-phone-h2: 21px !default;
+$lh-phone-h3: 19px !default;
+$lh-phone-headline: 16px !default;
+$lh-phone-body: 19.5px !default;
+$lh-phone-smallbody: 14px !default;
+$lh-phone-subtext: 11px !default;
+
+// 7. ELEVATION
+$elevation-1: 0 1px 3px 0 rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.12), 0 0 2px 0 rgba(0, 0, 0, 0.14);
+$elevation-2: 0 1px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+$elevation-3: 0 1px 8px 0 rgba(0, 0, 0, 0.2), 0 3px 4px 0 rgba(0, 0, 0, 0.12), 0 3px 3px 0 rgba(0, 0, 0, 0.14);
+$elevation-4: 0 1px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.12), 0 2px 4px 0 rgba(0, 0, 0, 0.14);
+$elevation-6: 0 3px 5px 0 rgba(0, 0, 0, 0.2), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 6px 10px 0 rgba(0, 0, 0, 0.14);
+$elevation-8: 0 4px 5px 0 rgba(0, 0, 0, 0.2), 0 3px 14px 3px rgba(0, 0, 0, 0.12), 0 8px 10px 1px rgba(0, 0, 0, 0.14);
+$elevation-9: 0 5px 6px 0 rgba(0, 0, 0, 0.2), 0 3px 16px 2px rgba(0, 0, 0, 0.12), 0 9px 12px 1px rgba(0, 0, 0, 0.14);
+$elevation-12: 0 7px 8px 0 rgba(0, 0, 0, 0.2), 0 5px 22px 4px rgba(0, 0, 0, 0.12), 0 12px 17px 2px rgba(0, 0, 0, 0.14);
+$elevation-16: 0 8px 10px 0 rgba(0, 0, 0, 0.2), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 16px 24px 2px rgba(0, 0, 0, 0.14);
+$elevation-24: 0 11px 15px 0 rgba(0, 0, 0, 0.2), 0 9px 46px 8px rgba(0, 0, 0, 0.12), 0 24px 38px 3px rgba(0, 0, 0, 0.14);
+
+// 8. Z-INDEX:
+$z-index-1: 1001;
+$z-index-2: 2001;
+$z-index-3: 3001;
+$z-index-4: 4001;
+$z-index-5: 5001;
+$z-index-6: 6001;
+$z-index-7: 7001;
+$z-index-8: 8001;
+$z-index-9: 9001;
+
+// 9. HEADER 
+$header-height: 72px !default;
+$header-height-phone: 56px !default;
+
+// ================================
+// ** II. MIXINS
+
+@mixin font-style($h1: false, $h2: false, $h3: false, $headline: false, $body: false, $smallbody: false, $subtext: false) {
+  @if $h1 {
+    color: $cl-black87;
+    font-size: $fs-h1;
+    font-weight: $fw-medium;
+    line-height: $lh-h1;
+
+    @media (max-width: $screen-max-phone) {
+      font-size: $fs-phone-h1;
+      line-height: $lh-phone-h1;
+    }
+  }
+
+  @if $h2 {
+    color: $cl-black87;
+    font-size: $fs-h2;
+    font-weight: $fw-medium;
+    line-height: $lh-h2;
+
+    @media (max-width: $screen-max-phone) {
+      font-size: $fs-phone-h2;
+      line-height: $lh-phone-h2;
+    }
+  }
+
+  @if $h3 {
+    color: $cl-black87;
+    font-size: $fs-h3;
+    font-weight: $fw-medium;
+    line-height: $lh-h3;
+
+    @media (max-width: $screen-max-phone) {
+      font-size: $fs-phone-h3;
+      line-height: $lh-phone-h3;
+    }
+  }
+
+  @if $headline {
+    color: $cl-black87;
+    font-size: $fs-headline;
+    font-weight: $fw-medium;
+    line-height: $lh-headline;
+
+    @media (max-width: $screen-max-phone) {
+      font-size: $fs-phone-headline;
+      line-height: $lh-phone-headline;
+    }
+  }
+
+  @if $body {
+    color: $cl-black87;
+    font-size: $fs-body;
+    font-weight: $fw-regular;
+    line-height: $lh-body;
+
+    @media (max-width: $screen-max-phone) {
+      font-size: $fs-phone-body;
+      line-height: $lh-phone-body;
+    }
+  }
+
+  @if $smallbody {
+    color: $cl-black54;
+    font-size: $fs-smallbody;
+    font-weight: $fw-regular;
+    line-height: $lh-smallbody;
+
+    @media (max-width: $screen-max-phone) {
+      font-size: $fs-phone-smallbody;
+      line-height: $lh-phone-smallbody;
+    }
+  }
+
+  @if $subtext {
+    color: $cl-black54;
+    font-size: $fs-subtext;
+    font-weight: $fw-regular;
+    line-height: $lh-subtext;
+
+    @media (max-width: $screen-max-phone) {
+      font-size: $fs-phone-subtext;
+      line-height: $lh-phone-subtext;
+    }
+  }
+}
+
+@mixin flex-center($display: flex) {
+  display: $display;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+@mixin truncate() {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// Text overflow ellipsis for multiple line
+// Eclipse only displays on webkit browser
+@mixin truncate-multiline($line-height, $lines-to-show) {
+  display: inline-block; /* Fallback for non-webkit */
+  display: -webkit-box;
+  max-height: ($line-height * $lines-to-show); /* Fallback for non-webkit */
+  -webkit-line-clamp: $lines-to-show;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+// ================================
+// ** II. BOOTSTRAP VARIABLES OVERRIDES
+//
+// Copy variables from `_variables.scss` to this file to override default values
+// without modifying source files.
+
+// Grid breakpoints
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: $screen-sm,
+  md: $screen-md,
+  lg: $screen-lg,
+  xl: $screen-xl
+);
+
+// Grid containers
+// Define the maximum width of `.container` for different screen sizes.
+
+$container-max-widths: (
+  sm: 540px,
+  md: 750px,
+  lg: 960px,
+  xl: 1260px
+);
+
+// Grid columns
+// Set the number of columns and specify the width of the gutters.
+$grid-gutter-width: 20px;
+$gutter: $grid-gutter-width;
+
+// Override _reboot.scss in bootstrap.v4@beta
+$font-family-base: $font-family;
+$font-size-base: $fs-body;
+$font-weight-base: $fw-regular;
+$body-color: $cl-black87;
+$link-color: $cl-primary;
+

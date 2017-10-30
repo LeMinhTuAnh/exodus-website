@@ -1,0 +1,39 @@
+@import (reference) '../../resources/bootstrap@3.3.7/variables.less';
+@import (reference) '../../resources/less/variables.less';
+
+.block {
+  margin: 0 0 (@grid-gutter-width / 2);
+  position: relative;
+
+  &.normal {
+    background: @bg-block-normal;
+    border-radius: 2px;
+    padding: @grid-gutter-width / 2;
+    box-shadow: @box-shadow;
+
+    @media (max-width: @screen-xs-max) {
+      margin-left: -(@grid-gutter-width / 2);
+      margin-right: -(@grid-gutter-width / 2);
+      margin-top: @grid-gutter-width / 2;
+    }
+  }
+
+  &.none {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+
+    &:last-child {
+      border-bottom: 0 none;
+    }
+  }
+
+  &.noBlockMarginTop {
+    margin-top: 0;
+  }
+
+  @media (max-width: @screen-sm) {
+    &.noBlockMarginTopPhone {
+      margin-top: 0;
+    }
+  }
+}

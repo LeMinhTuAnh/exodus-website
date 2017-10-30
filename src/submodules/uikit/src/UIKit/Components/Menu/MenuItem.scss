@@ -1,0 +1,28 @@
+@import "../../variables.scss";
+$padding: 16px;
+
+.root {
+  @include flex-center($display: flex);
+
+  justify-content: flex-start;
+  position: relative;
+  width: 100%;
+  height: 32px;
+  padding-left: $padding;
+  padding-right: $padding;
+}
+
+.label,
+.secondaryText {
+  @include font-style($smallbody: true);
+
+  color: $cl-black87;
+}
+
+.label {
+  flex-grow: 2;
+}
+
+.iconLeft {
+  margin-right: $padding;
+}

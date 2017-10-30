@@ -1,0 +1,12 @@
+@import "../../variables.scss";
+
+.vertical {
+  border-top-color: $cl-black12;
+}
+
+.horizontal {
+  display: inline-block;
+  height: 100%;
+  width: 0;
+  border-left: 1px solid $cl-black12;
+}

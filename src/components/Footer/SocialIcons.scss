@@ -1,0 +1,15 @@
+@import '../../submodules/uikit/src/UIKit/variables.scss';
+
+.root {
+  svg path {
+    fill: $cl-neutral-4;
+  }
+
+  svg:hover path {
+    fill: $cl-primary;
+  }
+}
+
+.link {
+  margin-left: 24px;
+}

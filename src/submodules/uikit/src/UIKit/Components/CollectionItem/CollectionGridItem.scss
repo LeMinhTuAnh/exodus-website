@@ -1,0 +1,37 @@
+@import "../../variables.scss";
+
+.root {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.banner {
+  width: 100%;
+  height: 0;
+  padding-top: 50%;
+  margin-bottom: 16px;
+}
+
+.title {
+  @include font-style($h2: true);
+
+  margin-bottom: 16px;
+  line-height: 24px;
+
+  &:hover {
+    color: $cl-primary;
+    text-decoration: underline !important;
+  }
+}
+
+.subtitle {
+  @include font-style($body: true);
+
+  color: $cl-black54;
+  margin-bottom: 16px;
+}
+
+.statisticView {
+  margin-right: 24px;
+}

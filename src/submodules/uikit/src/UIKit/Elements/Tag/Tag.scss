@@ -1,0 +1,56 @@
+@import "../../variables.scss";
+$tag-height: 36px;
+$tag-height-phone: 32px;
+
+.root {
+  @include font-style($body: true);
+
+  display: inline-flex;
+  border-radius: 4px;
+  background-color: $cl-neutral-2;
+  margin-right: 16px;
+  margin-bottom: 16px;
+  cursor: default;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.haveLink {
+  cursor: pointer;
+
+  &:hover {
+    background-color: $cl-black12;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.label {
+  @include flex-center(inline-flex);
+
+  color: $cl-black54;
+  height: $tag-height;
+  padding: 8px 16px;
+
+  @media (max-width: $screen-max-phone) {
+    height: $tag-height-phone;
+  }
+}
+
+.sublabel {
+  @include flex-center(inline-flex);
+
+  padding: 8px 12px;
+  height: $tag-height;
+  color: $cl-black54;
+  background-color: $cl-black12;
+  border-radius: 0 4px 4px 0;
+
+  @media (max-width: $screen-max-phone) {
+    height: $tag-height-phone;
+  }
+}
